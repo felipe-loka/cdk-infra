@@ -41,8 +41,9 @@ export class MainStack extends cdk.Stack {
             "npm install",
             "npx cdk synth"
           ]
-        }
-      )
+        },
+      ),
+      selfMutation: true
     });
 
     const stackPropsDev: StackProps = {
