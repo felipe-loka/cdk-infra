@@ -24,7 +24,7 @@ export class MainStack extends cdk.Stack {
 
     const githubRepositoy = "felipe-loka/cdk-infra"
     const githubPipelineBranch = "main"
-    const githubCodestartConnectionARN = "arn:aws:codestar-connections:us-east-2:570360337377:connection/f4188fde-7d0b-47aa-940a-5e01c6f0ca72"
+    const githubCodestartConnectionARN = "arn:aws:codestar-connections:us-east-2:937168356724:connection/04d8546b-c5cc-46be-848a-a0b1259484db"
 
     const githubConnection = pipelines.CodePipelineSource.connection(
       githubRepositoy,
@@ -38,8 +38,8 @@ export class MainStack extends cdk.Stack {
         {
           input: githubConnection,
           commands: [
-            "yarn",
-            "yarn cdk synth"
+            "npm",
+            "npx cdk synth"
           ]
         }
       )
