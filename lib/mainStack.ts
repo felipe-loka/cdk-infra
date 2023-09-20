@@ -89,7 +89,7 @@ class EnvironmentStage extends cdk.Stage {
   ) {
     super(scope, id, props);
 
-    const vpc = new VPCStack(this, "VPC", stackProps)
-    new DummyStack(this, "DummyStack", stackProps, vpc)
+    // const vpc = new VPCStack(this, "VPC", stackProps)
+    // new DummyStack(this, "DummyStack", stackProps, vpc)
   }
 }
