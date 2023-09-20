@@ -38,7 +38,7 @@ export class MainStack extends cdk.Stack {
         {
           input: githubConnection,
           commands: [
-            "npm",
+            "npm install",
             "npx cdk synth"
           ]
         }
